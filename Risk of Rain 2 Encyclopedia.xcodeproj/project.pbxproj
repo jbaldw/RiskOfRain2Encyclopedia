@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA152818257C30B70004D12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA152817257C30B70004D12B /* AppDelegate.swift */; };
+		BA15281A257C30B70004D12B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA152819257C30B70004D12B /* SceneDelegate.swift */; };
+		BA15281C257C30B70004D12B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15281B257C30B70004D12B /* ViewController.swift */; };
+		BA15281F257C30B70004D12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA15281D257C30B70004D12B /* Main.storyboard */; };
+		BA152822257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA152820257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld */; };
+		BA152824257C30B80004D12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA152823257C30B80004D12B /* Assets.xcassets */; };
+		BA152827257C30B80004D12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA152825257C30B80004D12B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA152814257C30B70004D12B /* Risk of Rain 2 Encyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Risk of Rain 2 Encyclopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA152817257C30B70004D12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA152819257C30B70004D12B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA15281B257C30B70004D12B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA15281E257C30B70004D12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA152821257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Risk_of_Rain_2_Encyclopedia.xcdatamodel; sourceTree = "<group>"; };
+		BA152823257C30B80004D12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA152826257C30B80004D12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA152828257C30B80004D12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA152811257C30B60004D12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA15280B257C30B60004D12B = {
+			isa = PBXGroup;
+			children = (
+				BA152816257C30B70004D12B /* Risk of Rain 2 Encyclopedia */,
+				BA152815257C30B70004D12B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA152815257C30B70004D12B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA152814257C30B70004D12B /* Risk of Rain 2 Encyclopedia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA152816257C30B70004D12B /* Risk of Rain 2 Encyclopedia */ = {
+			isa = PBXGroup;
+			children = (
+				BA152817257C30B70004D12B /* AppDelegate.swift */,
+				BA152819257C30B70004D12B /* SceneDelegate.swift */,
+				BA15281B257C30B70004D12B /* ViewController.swift */,
+				BA15281D257C30B70004D12B /* Main.storyboard */,
+				BA152823257C30B80004D12B /* Assets.xcassets */,
+				BA152825257C30B80004D12B /* LaunchScreen.storyboard */,
+				BA152828257C30B80004D12B /* Info.plist */,
+				BA152820257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld */,
+			);
+			path = "Risk of Rain 2 Encyclopedia";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA152813257C30B60004D12B /* Risk of Rain 2 Encyclopedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA15282B257C30B80004D12B /* Build configuration list for PBXNativeTarget "Risk of Rain 2 Encyclopedia" */;
+			buildPhases = (
+				BA152810257C30B60004D12B /* Sources */,
+				BA152811257C30B60004D12B /* Frameworks */,
+				BA152812257C30B60004D12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Risk of Rain 2 Encyclopedia";
+			productName = "Risk of Rain 2 Encyclopedia";
+			productReference = BA152814257C30B70004D12B /* Risk of Rain 2 Encyclopedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA15280C257C30B60004D12B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BA152813257C30B60004D12B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = BA15280F257C30B60004D12B /* Build configuration list for PBXProject "Risk of Rain 2 Encyclopedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA15280B257C30B60004D12B;
+			productRefGroup = BA152815257C30B70004D12B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA152813257C30B60004D12B /* Risk of Rain 2 Encyclopedia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA152812257C30B60004D12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA152827257C30B80004D12B /* LaunchScreen.storyboard in Resources */,
+				BA152824257C30B80004D12B /* Assets.xcassets in Resources */,
+				BA15281F257C30B70004D12B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA152810257C30B60004D12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA15281C257C30B70004D12B /* ViewController.swift in Sources */,
+				BA152818257C30B70004D12B /* AppDelegate.swift in Sources */,
+				BA152822257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld in Sources */,
+				BA15281A257C30B70004D12B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA15281D257C30B70004D12B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA15281E257C30B70004D12B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA152825257C30B80004D12B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA152826257C30B80004D12B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA152829257C30B80004D12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA15282A257C30B80004D12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA15282C257C30B80004D12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Risk of Rain 2 Encyclopedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baldwinjd2.Risk-of-Rain-2-Encyclopedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA15282D257C30B80004D12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Risk of Rain 2 Encyclopedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baldwinjd2.Risk-of-Rain-2-Encyclopedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA15280F257C30B60004D12B /* Build configuration list for PBXProject "Risk of Rain 2 Encyclopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA152829257C30B80004D12B /* Debug */,
+				BA15282A257C30B80004D12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA15282B257C30B80004D12B /* Build configuration list for PBXNativeTarget "Risk of Rain 2 Encyclopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA15282C257C30B80004D12B /* Debug */,
+				BA15282D257C30B80004D12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA152820257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA152821257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodel */,
+			);
+			currentVersion = BA152821257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodel */;
+			path = Risk_of_Rain_2_Encyclopedia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA15280C257C30B60004D12B /* Project object */;
+}
