@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA14022F257C467C0043C4C5 /* ItemDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14022E257C467C0043C4C5 /* ItemDescriptionViewController.swift */; };
 		BA152818257C30B70004D12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA152817257C30B70004D12B /* AppDelegate.swift */; };
 		BA15281A257C30B70004D12B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA152819257C30B70004D12B /* SceneDelegate.swift */; };
 		BA15281C257C30B70004D12B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA15281B257C30B70004D12B /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		BA152822257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA152820257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld */; };
 		BA152824257C30B80004D12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA152823257C30B80004D12B /* Assets.xcassets */; };
 		BA152827257C30B80004D12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA152825257C30B80004D12B /* LaunchScreen.storyboard */; };
+		BA152834257C364B0004D12B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA152833257C364B0004D12B /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA14022E257C467C0043C4C5 /* ItemDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescriptionViewController.swift; sourceTree = "<group>"; };
 		BA152814257C30B70004D12B /* Risk of Rain 2 Encyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Risk of Rain 2 Encyclopedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA152817257C30B70004D12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA152819257C30B70004D12B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		BA152823257C30B80004D12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA152826257C30B80004D12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA152828257C30B80004D12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA152833257C364B0004D12B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 			children = (
 				BA152817257C30B70004D12B /* AppDelegate.swift */,
 				BA152819257C30B70004D12B /* SceneDelegate.swift */,
+				BA152833257C364B0004D12B /* CollectionViewCell.swift */,
 				BA15281B257C30B70004D12B /* ViewController.swift */,
+				BA14022E257C467C0043C4C5 /* ItemDescriptionViewController.swift */,
 				BA15281D257C30B70004D12B /* Main.storyboard */,
 				BA152823257C30B80004D12B /* Assets.xcassets */,
 				BA152825257C30B80004D12B /* LaunchScreen.storyboard */,
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA152834257C364B0004D12B /* CollectionViewCell.swift in Sources */,
 				BA15281C257C30B70004D12B /* ViewController.swift in Sources */,
 				BA152818257C30B70004D12B /* AppDelegate.swift in Sources */,
 				BA152822257C30B70004D12B /* Risk_of_Rain_2_Encyclopedia.xcdatamodeld in Sources */,
+				BA14022F257C467C0043C4C5 /* ItemDescriptionViewController.swift in Sources */,
 				BA15281A257C30B70004D12B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
