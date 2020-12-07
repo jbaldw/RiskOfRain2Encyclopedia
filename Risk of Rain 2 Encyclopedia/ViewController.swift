@@ -55,6 +55,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var itemTypes = ["Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Equipment", "Equipment"]
     
+    var defaultItems = [String]()
+    var defaultItemImages = [UIImage]()
+    var defaultItemDescriptions = [String]()
+    var defaultItemRarity = [String]()
+    var defaultItemTypes = [String]()
+    
     var currentItem: UIImage? = nil
     var itemName = ""
     var itemDescription = ""
@@ -68,6 +74,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
         collectionView.dataSource = self
         tabBar.delegate = self
+        defaultItems = items
+        defaultItemImages = itemImages
+        defaultItemDescriptions = itemDescriptions
+        defaultItemRarity = itemRarities
+        defaultItemTypes = itemTypes
         // Do any additional setup after loading the view.
     }
     
@@ -119,6 +130,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         let selectedFilter = item.title
         
+        self.items = self.defaultItems
+        self.itemImages = self.defaultItemImages
+        self.itemDescriptions = self.defaultItemDescriptions
+        self.itemRarities = self.defaultItemRarity
+        self.itemTypes = self.defaultItemTypes
+        
         if(selectedFilter == "All") {
             self.collectionView.reloadData()
             
@@ -132,12 +149,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 }
             }
             
-            let defaultItems = items
-            let defaultItemImages = itemImages
-            let defaultItemDescriptions = itemDescriptions
-            let defaultItemRarity = itemRarities
-            let defaultItemTypes = itemTypes
-            
             items = indexSet.map { defaultItems[$0] }
             itemImages = indexSet.map { defaultItemImages[$0] }
             itemDescriptions = indexSet.map { defaultItemDescriptions[$0] }
@@ -145,16 +156,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             itemTypes = indexSet.map { defaultItemTypes[$0] }
             
             self.collectionView.reloadData()
-            
-            self.collectionView.performBatchUpdates(nil, completion: {
-                (result) in
-                self.items = defaultItems
-                self.itemImages = defaultItemImages
-                self.itemDescriptions = defaultItemDescriptions
-                self.itemRarities = defaultItemRarity
-                self.itemTypes = defaultItemTypes
-                
-            })
         }
     }
 }

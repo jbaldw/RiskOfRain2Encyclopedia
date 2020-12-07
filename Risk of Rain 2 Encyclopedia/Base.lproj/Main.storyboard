@@ -64,13 +64,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem title="All" id="pjj-Jy-atn"/>
-                                    <tabBarItem title="Common" id="Yih-Ud-Oaj"/>
-                                    <tabBarItem title="Uncommon" id="Bsu-lD-ipd"/>
-                                    <tabBarItem title="Legendary" id="zIG-Ae-eQF"/>
-                                    <tabBarItem title="Boss" id="whR-w5-zhW"/>
-                                    <tabBarItem title="Lunar" id="Nn4-N9-bhQ"/>
-                                    <tabBarItem title="Equipment" id="fV3-II-Ry3"/>
+                                    <tabBarItem title="All" image="brown" selectedImage="brown" id="pjj-Jy-atn"/>
+                                    <tabBarItem title="Common" image="grey" largeContentSizeImage="grey" id="Yih-Ud-Oaj"/>
+                                    <tabBarItem title="Uncommon" image="green" id="Bsu-lD-ipd"/>
+                                    <tabBarItem title="Legendary" image="red" id="zIG-Ae-eQF"/>
+                                    <tabBarItem title="Boss" image="yellow" id="whR-w5-zhW"/>
+                                    <tabBarItem title="Lunar" image="blue" id="Nn4-N9-bhQ"/>
+                                    <tabBarItem title="Equipment" image="black" id="fV3-II-Ry3"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -149,6 +149,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="black" width="10" height="10"/>
+        <image name="blue" width="10" height="10"/>
+        <image name="brown" width="10" height="10"/>
+        <image name="green" width="10" height="10"/>
+        <image name="grey" width="10" height="10"/>
+        <image name="red" width="10" height="10"/>
+        <image name="yellow" width="10" height="10"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
