@@ -64,6 +64,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
+                                    <tabBarItem title="All" id="pjj-Jy-atn"/>
                                     <tabBarItem title="Common" id="Yih-Ud-Oaj"/>
                                     <tabBarItem title="Uncommon" id="Bsu-lD-ipd"/>
                                     <tabBarItem title="Legendary" id="zIG-Ae-eQF"/>
@@ -85,6 +86,7 @@
                     <navigationItem key="navigationItem" title="Items" id="Sdw-ci-zHU"/>
                     <connections>
                         <outlet property="collectionView" destination="MAd-z6-wR3" id="6pA-HS-7hp"/>
+                        <outlet property="tabBar" destination="fgH-py-EUG" id="yUA-ax-bOO"/>
                         <segue destination="cXj-o1-dvu" kind="show" identifier="SecondViewSegue" id="Hbz-HJ-HRK"/>
                     </connections>
                 </viewController>

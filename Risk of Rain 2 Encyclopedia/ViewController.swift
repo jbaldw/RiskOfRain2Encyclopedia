@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UITabBarDelegate {
 
     @IBOutlet var collectionView: UICollectionView!
     
-    let items = ["Armor-Piercing Rounds", "Backup Magazine", "Bundle of Fireworks", "Bustling Fungus", "Cautious Slug", "Crowbar", "Energy Drink", "Focus Crystal", "Fresh Meat", "Gasoline", "Item Scrap, White", "Lens-Maker's Glasses", "Medkit", "Monster Tooth", "Paul's Goat Hoof", "Personal Shield Generator", "Repulsion Armor Plate", "Rusted Key", "Soldier's Syringe", "Sticky Bomb", "Stun Grenade", "Topaz Brooch", "Tougher Times", "Tri-Tip Dagger", "Warbanner", /* End of Common Items*/  "AtG Missile Mk. 1", "57 Leaf Clover", "Artifact Key", "Beads of Fealty", "Blast Shower", "Effigy of Grief"]
+    @IBOutlet var tabBar: UITabBar!
     
-    let itemImages: [UIImage] = [
+    var items = ["Armor-Piercing Rounds", "Backup Magazine", "Bundle of Fireworks", "Bustling Fungus", "Cautious Slug", "Crowbar", "Energy Drink", "Focus Crystal", "Fresh Meat", "Gasoline", "Item Scrap, White", "Lens-Maker's Glasses", "Medkit", "Monster Tooth", "Paul's Goat Hoof", "Personal Shield Generator", "Repulsion Armor Plate", "Rusted Key", "Soldier's Syringe", "Sticky Bomb", "Stun Grenade", "Topaz Brooch", "Tougher Times", "Tri-Tip Dagger", "Warbanner", /* End of Common Items*/  "AtG Missile Mk. 1", "57 Leaf Clover", "Artifact Key", "Beads of Fealty", "Blast Shower", "Effigy of Grief"]
+    
+    var itemImages: [UIImage] = [
         UIImage(named: "Armor-Piercing_Rounds")!,
         UIImage(named: "Backup_Magazine")!,
         UIImage(named: "Bundle_of_Fireworks")!,
@@ -47,11 +49,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         UIImage(named: "Effigy_of_Grief")!
     ]
     
-    let itemDescriptions = ["Deal an additional 20% damage (+20% per stack) to bosses.", "Add +1 (+1 per stack) charge of your Secondary skill.", "Activating an interactable launches 8 (+4 per stack) fireworks that deal 300% base damage.", "After standing still for 2 seconds, create a zone that heals for 4.5% (+2.25% per stack) of your health every second to all allies within 3m (+1.5m per stack).", "Increases base health regeneration by +3hp/s (+3 hp/s per stack) while outside of combat.", "Deal 150% (+50% per stack) damage to enemies above 90% health.", "Sprint speed is improved by 30% (+20% per stack).", "Increase damage to enemies within 13m by 15% (+15% per stack).", "Increases base health regeneration by 2 hp/s for 3s (+3s per stack) after killing an enemy.", "Killing an enemy ignites all enemies within 12m (+4m per stack). Enemies burn for 150% (+75% per stack) base damage.", "Does nothing. Prioritized when used with 3D Printers.", "Your attacks have a 10% (+10% per stack) chance to 'Critically Strike', dealing double damange.", "2 seconds after getting hurt, heal for 20 plus an additional 5% (+5% per stack) of maximum health.", "Killing an enemy spawns a healing orb that heals for 8 plus an additional 2% (+2% per stack) of maximum health.", "Increases movement speed by 14% (+14% per stack).", "Gain a shield equal to 8% (+8% per stack) of your maximum health. Rechages outside of danger.", "Reduce all incoming damage by 5 (+5 per stack). Cannot be reduced below 1.", "A hidden cachce containing an item will appear in a random location on each stage. (Increases rarity of the item per stack).", "Increases attack speed by 15% (+15% per stack).", "5% (+5% per stack) chance on hit to attach a bomb to an enemy, detonating for 180% TOTAL damage.", "5% (+5% per stack) chance on hit to stun enemies for 2 seconds.", "Gain a temporary barrier on kill for 15 health (+15 per stack).", "15% (+15% per stack) chance to block incoming damage. Unaffected by luck.", "15% (+15% per stack) chance to bleed an enemy for 240% base damage.", "On level up or starting the Teleporter event, drop a banner that strengthens all allies within 16m (+8m per stack). Raise attack and movement speed by 30%.", "10% chance to fire a missile that deals 300% (+300% per stack) TOTAL damage.", "All random effects are rolled +1 (+1 per stack) times for a favorable outcome.", "A stone shard with immense power.", "Seems to do nothing... but...", "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.", "All characters within are slowed by 50% and have their armor reduced by 20. Can place up to 5."]
+    var itemDescriptions = ["Deal an additional 20% damage (+20% per stack) to bosses.", "Add +1 (+1 per stack) charge of your Secondary skill.", "Activating an interactable launches 8 (+4 per stack) fireworks that deal 300% base damage.", "After standing still for 2 seconds, create a zone that heals for 4.5% (+2.25% per stack) of your health every second to all allies within 3m (+1.5m per stack).", "Increases base health regeneration by +3hp/s (+3 hp/s per stack) while outside of combat.", "Deal 150% (+50% per stack) damage to enemies above 90% health.", "Sprint speed is improved by 30% (+20% per stack).", "Increase damage to enemies within 13m by 15% (+15% per stack).", "Increases base health regeneration by 2 hp/s for 3s (+3s per stack) after killing an enemy.", "Killing an enemy ignites all enemies within 12m (+4m per stack). Enemies burn for 150% (+75% per stack) base damage.", "Does nothing. Prioritized when used with 3D Printers.", "Your attacks have a 10% (+10% per stack) chance to 'Critically Strike', dealing double damange.", "2 seconds after getting hurt, heal for 20 plus an additional 5% (+5% per stack) of maximum health.", "Killing an enemy spawns a healing orb that heals for 8 plus an additional 2% (+2% per stack) of maximum health.", "Increases movement speed by 14% (+14% per stack).", "Gain a shield equal to 8% (+8% per stack) of your maximum health. Rechages outside of danger.", "Reduce all incoming damage by 5 (+5 per stack). Cannot be reduced below 1.", "A hidden cachce containing an item will appear in a random location on each stage. (Increases rarity of the item per stack).", "Increases attack speed by 15% (+15% per stack).", "5% (+5% per stack) chance on hit to attach a bomb to an enemy, detonating for 180% TOTAL damage.", "5% (+5% per stack) chance on hit to stun enemies for 2 seconds.", "Gain a temporary barrier on kill for 15 health (+15 per stack).", "15% (+15% per stack) chance to block incoming damage. Unaffected by luck.", "15% (+15% per stack) chance to bleed an enemy for 240% base damage.", "On level up or starting the Teleporter event, drop a banner that strengthens all allies within 16m (+8m per stack). Raise attack and movement speed by 30%.", "10% chance to fire a missile that deals 300% (+300% per stack) TOTAL damage.", "All random effects are rolled +1 (+1 per stack) times for a favorable outcome.", "A stone shard with immense power.", "Seems to do nothing... but...", "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.", "All characters within are slowed by 50% and have their armor reduced by 20. Can place up to 5."]
     
-    let itemRarities = ["Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Uncommon", "Legendary", "Boss", "Lunar", "Equipment", "Equipment"]
+    var itemRarities = ["Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Uncommon", "Legendary", "Boss", "Lunar", "Equipment", "Equipment"]
     
-    let itemTypes = ["Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Equipment", "Equipment"]
+    var itemTypes = ["Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Passive", "Equipment", "Equipment"]
     
     var currentItem: UIImage? = nil
     var itemName = ""
@@ -59,11 +61,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var itemType = ""
     var itemRarity = ""
     var backgroundColor: UIColor? = nil
+    var lastSelectedFilter = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        tabBar.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -110,6 +114,48 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             + "Type: " + self.itemType + "\n\n"
             + "Rarity: " + self.itemRarity;
         vc.itemRarity = self.itemRarity
+    }
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        let selectedFilter = item.title
+        
+        if(selectedFilter == "All") {
+            self.collectionView.reloadData()
+            
+        }
+        else {
+            var indexSet: IndexSet = []
+            
+            for(index, rarity) in itemRarities.enumerated() {
+                if(rarity == selectedFilter) {
+                    indexSet.insert(index)
+                }
+            }
+            
+            let defaultItems = items
+            let defaultItemImages = itemImages
+            let defaultItemDescriptions = itemDescriptions
+            let defaultItemRarity = itemRarities
+            let defaultItemTypes = itemTypes
+            
+            items = indexSet.map { defaultItems[$0] }
+            itemImages = indexSet.map { defaultItemImages[$0] }
+            itemDescriptions = indexSet.map { defaultItemDescriptions[$0] }
+            itemRarities = indexSet.map { defaultItemRarity[$0] }
+            itemTypes = indexSet.map { defaultItemTypes[$0] }
+            
+            self.collectionView.reloadData()
+            
+            self.collectionView.performBatchUpdates(nil, completion: {
+                (result) in
+                self.items = defaultItems
+                self.itemImages = defaultItemImages
+                self.itemDescriptions = defaultItemDescriptions
+                self.itemRarities = defaultItemRarity
+                self.itemTypes = defaultItemTypes
+                
+            })
+        }
     }
 }
 
